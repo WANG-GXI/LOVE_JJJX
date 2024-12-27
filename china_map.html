@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_58ae5d174b8a5dfa3cd11dd84db9f2f9 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_58ae5d174b8a5dfa3cd11dd84db9f2f9" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_58ae5d174b8a5dfa3cd11dd84db9f2f9 = L.map(
+                "map_58ae5d174b8a5dfa3cd11dd84db9f2f9",
+                {
+                    center: [35.8617, 104.1954],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_17f1ef53136fbf39949f53ba3c6b1040 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_58ae5d174b8a5dfa3cd11dd84db9f2f9);
+        
+    
+            var marker_3a73dfcaf78c3021a9e51d277eebf162 = L.marker(
+                [39.9042, 116.4074],
+                {}
+            ).addTo(map_58ae5d174b8a5dfa3cd11dd84db9f2f9);
+        
+    
+            var icon_33b323f2df6003ffffd9cebedbcc52d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3a73dfcaf78c3021a9e51d277eebf162.setIcon(icon_33b323f2df6003ffffd9cebedbcc52d2);
+        
+    
+        var popup_6594496c66aaae30cf868fd9f7b3fcc0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c63344ab9c5c868447febedafa73ce0d = $(`<div id="html_c63344ab9c5c868447febedafa73ce0d" style="width: 100.0%; height: 100.0%;">北京</div>`)[0];
+                popup_6594496c66aaae30cf868fd9f7b3fcc0.setContent(html_c63344ab9c5c868447febedafa73ce0d);
+            
+        
+
+        marker_3a73dfcaf78c3021a9e51d277eebf162.bindPopup(popup_6594496c66aaae30cf868fd9f7b3fcc0)
+        ;
+
+        
+    
+    
+            var marker_f4a78097fd0d57bbfdc4c326e2dc1b42 = L.marker(
+                [38.9145, 121.6147],
+                {}
+            ).addTo(map_58ae5d174b8a5dfa3cd11dd84db9f2f9);
+        
+    
+            var icon_07303062976e04c518ab55a57f237b40 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f4a78097fd0d57bbfdc4c326e2dc1b42.setIcon(icon_07303062976e04c518ab55a57f237b40);
+        
+    
+        var popup_c1b85baff3ce9597525dd345c217c51c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8dd9e65768e3dfcc3dea31438d56f51c = $(`<div id="html_8dd9e65768e3dfcc3dea31438d56f51c" style="width: 100.0%; height: 100.0%;">大连</div>`)[0];
+                popup_c1b85baff3ce9597525dd345c217c51c.setContent(html_8dd9e65768e3dfcc3dea31438d56f51c);
+            
+        
+
+        marker_f4a78097fd0d57bbfdc4c326e2dc1b42.bindPopup(popup_c1b85baff3ce9597525dd345c217c51c)
+        ;
+
+        
+    
+    
+            var marker_14a5aa0bfa8bd0fd00b45d07b0e4b3c2 = L.marker(
+                [41.1102, 122.9946],
+                {}
+            ).addTo(map_58ae5d174b8a5dfa3cd11dd84db9f2f9);
+        
+    
+            var icon_18eff4c6e3fb088065333ef379b700b3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_14a5aa0bfa8bd0fd00b45d07b0e4b3c2.setIcon(icon_18eff4c6e3fb088065333ef379b700b3);
+        
+    
+        var popup_36a58f01da50072eac5791b1d72b028a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_81fb75f88ca3951eaa6fb3b6b088338e = $(`<div id="html_81fb75f88ca3951eaa6fb3b6b088338e" style="width: 100.0%; height: 100.0%;">鞍山</div>`)[0];
+                popup_36a58f01da50072eac5791b1d72b028a.setContent(html_81fb75f88ca3951eaa6fb3b6b088338e);
+            
+        
+
+        marker_14a5aa0bfa8bd0fd00b45d07b0e4b3c2.bindPopup(popup_36a58f01da50072eac5791b1d72b028a)
+        ;
+
+        
+    
+    
+            var marker_22ed7df2bfeccb215baa6edbd08bb4c2 = L.marker(
+                [39.3434, 117.3616],
+                {}
+            ).addTo(map_58ae5d174b8a5dfa3cd11dd84db9f2f9);
+        
+    
+            var icon_f3106d3db08ccf048a6a9cf002887949 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_22ed7df2bfeccb215baa6edbd08bb4c2.setIcon(icon_f3106d3db08ccf048a6a9cf002887949);
+        
+    
+        var popup_5d52ce05a0e83802593f9d6f01fdcbed = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_edb85bef54bd1daabf8fac63488babb4 = $(`<div id="html_edb85bef54bd1daabf8fac63488babb4" style="width: 100.0%; height: 100.0%;">天津</div>`)[0];
+                popup_5d52ce05a0e83802593f9d6f01fdcbed.setContent(html_edb85bef54bd1daabf8fac63488babb4);
+            
+        
+
+        marker_22ed7df2bfeccb215baa6edbd08bb4c2.bindPopup(popup_5d52ce05a0e83802593f9d6f01fdcbed)
+        ;
+
+        
+    
+    
+            var marker_78d60a88e047bc00bcb28dea641a849e = L.marker(
+                [43.8244, 125.3245],
+                {}
+            ).addTo(map_58ae5d174b8a5dfa3cd11dd84db9f2f9);
+        
+    
+            var icon_e50bff1fba6bce7dc8472691d1d824c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_78d60a88e047bc00bcb28dea641a849e.setIcon(icon_e50bff1fba6bce7dc8472691d1d824c6);
+        
+    
+        var popup_fad4e24be10f730462cbddb4ed065224 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f3973fcd8f6ceade5e451e87eb1842d7 = $(`<div id="html_f3973fcd8f6ceade5e451e87eb1842d7" style="width: 100.0%; height: 100.0%;">长春</div>`)[0];
+                popup_fad4e24be10f730462cbddb4ed065224.setContent(html_f3973fcd8f6ceade5e451e87eb1842d7);
+            
+        
+
+        marker_78d60a88e047bc00bcb28dea641a849e.bindPopup(popup_fad4e24be10f730462cbddb4ed065224)
+        ;
+
+        
+    
+    
+            var marker_e4242230f5c2fc3f1d5913a9ef561d1e = L.marker(
+                [42.8912, 129.5089],
+                {}
+            ).addTo(map_58ae5d174b8a5dfa3cd11dd84db9f2f9);
+        
+    
+            var icon_545dad270f994a44cbd646b11a92d1e2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e4242230f5c2fc3f1d5913a9ef561d1e.setIcon(icon_545dad270f994a44cbd646b11a92d1e2);
+        
+    
+        var popup_92aebc79fe957fa374ac63bcfb3975ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b1cc55005ffc8485a3ec416241bf60c8 = $(`<div id="html_b1cc55005ffc8485a3ec416241bf60c8" style="width: 100.0%; height: 100.0%;">延边</div>`)[0];
+                popup_92aebc79fe957fa374ac63bcfb3975ba.setContent(html_b1cc55005ffc8485a3ec416241bf60c8);
+            
+        
+
+        marker_e4242230f5c2fc3f1d5913a9ef561d1e.bindPopup(popup_92aebc79fe957fa374ac63bcfb3975ba)
+        ;
+
+        
+    
+    
+            var poly_line_f831c3fa7a539402edfe95723f1a6bed = L.polyline(
+                [[39.9042, 116.4074], [39.3434, 117.3616], [38.9145, 121.6147], [41.1102, 122.9946], [42.8912, 129.5089], [43.8244, 125.3245], [39.9042, 116.4074]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_58ae5d174b8a5dfa3cd11dd84db9f2f9);
+        
+</script>
+</html>

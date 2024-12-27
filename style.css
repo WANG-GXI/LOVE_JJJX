@@ -1,0 +1,177 @@
+/* 渐变背景和有趣的字体 */
+body {
+    background: linear-gradient(135deg, #ff4081, #1de9b6);
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+ }
+
+/* 动态标题样式 */
+h1, h2, h3 {
+    color: #ffd600;
+    text-align: center;
+    margin-top: 50px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+    font-size: 3em;
+}
+/* Docsify 默认的侧边栏样式 */
+.sidebar {
+    width: 250px;         
+    position: fixed;      
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #000000; /* 修改为黑色背景 */
+    color: #ecf0f1; /* 浅色文字，提升可读性 */
+    overflow-y: auto;    
+    z-index: 1000;       
+    padding-top: 20px;
+}
+/* 内容区域偏移侧边栏宽度 */
+.content {
+    margin-left: 250px;   /* 确保内容不会被侧边栏遮挡 */
+}
+
+/* 卡片布局图片展示 */
+.gallery {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+details[open] .gallery {
+  display: flex;
+}
+/* 定义 CSS 变量 */
+:root {
+    --card-bg-color: #ffffff;
+    --card-text-color: #333;
+    --card-border-radius: 15px;
+    --card-transition: transform 0.3s ease;
+    --card-hover-scale: 1.05;
+    --card-box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    --card-gradient: linear-gradient(135deg, #ff4081, #1de9b6);
+}
+/* 图片和视频的卡片样式 */
+.card {
+    background-color: var(--card-bg-color);
+    color: var(--card-text-color);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--card-box-shadow);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: var(--card-transition);
+    margin: 20px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer; /* 改变鼠标悬停时的光标形状 */
+}
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--card-gradient);
+    opacity: 0.1;
+    border-radius: var(--card-border-radius);
+    z-index: -1;
+    transition: opacity 0.3s ease;
+}
+
+.card:hover::before {
+    opacity: 0.2;
+}
+
+.card:hover {
+    transform: scale(var(--card-hover-scale));
+}
+
+/* 固定图片和视频的大小 */
+img, video {
+    width: 100%;
+    max-width: 600px; /* 固定最大宽度为 600px */
+    height: auto; /* 高度自适应 */
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 
+/* 动态链接样式 */
+a {
+    color: #ffd600;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+a:hover {
+    color: #ff4081;
+    text-decoration: underline;
+}
+
+
+/* 脚注样式 */
+footer {
+    text-align: center;
+    margin: 50px 0;
+    color: #fff;
+    font-size: 0.8em;
+}
+/* 动画效果 */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeIn 0.5s ease-out;
+    animation-fill-mode: both; /* 确保动画完成后元素保持最终状态 */
+}
+
+/* 增加响应式设计 */
+@media (max-width: 600px) {
+    .card {
+        width: calc(100% - 40px); /* 在小屏幕上卡片宽度为100%减去外边距 */
+    }
+}
+
+#countdown-container {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+#countdown-container p {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+#audio-controls {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+
+#audio-control {
+  background-color: #ffd600;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#audio-control:hover {
+  background-color: #ff4081;
+}
