@@ -1,6 +1,6 @@
-<<<<<<< HEAD
+
 # Love_JJJX
-=======
+
 # Our Love Journey
 
 <div id="countdown-container">
@@ -122,4 +122,4 @@
 
 
 
->>>>>>> e38d5a1 (2024-12-27)
+

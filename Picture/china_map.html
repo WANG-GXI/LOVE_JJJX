@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e913313519948caec1967ed3b3495246 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_e913313519948caec1967ed3b3495246" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e913313519948caec1967ed3b3495246 = L.map(
+                "map_e913313519948caec1967ed3b3495246",
+                {
+                    center: [35.8617, 104.1954],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a0ffec5859930f2a4aae7caec31a9d4c = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_e913313519948caec1967ed3b3495246);
+        
+    
+            var marker_82987b89274858070caaa34e0ed95084 = L.marker(
+                [39.9042, 116.4074],
+                {}
+            ).addTo(map_e913313519948caec1967ed3b3495246);
+        
+    
+            var icon_9a0462a16f88f63eabfe90a175d942c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_82987b89274858070caaa34e0ed95084.setIcon(icon_9a0462a16f88f63eabfe90a175d942c6);
+        
+    
+        var popup_a5e2c1f63329dc634e8ac8e78cc8965b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0def366ab68dc29a3676272664baaa95 = $(`<div id="html_0def366ab68dc29a3676272664baaa95" style="width: 100.0%; height: 100.0%;">北京</div>`)[0];
+                popup_a5e2c1f63329dc634e8ac8e78cc8965b.setContent(html_0def366ab68dc29a3676272664baaa95);
+            
+        
+
+        marker_82987b89274858070caaa34e0ed95084.bindPopup(popup_a5e2c1f63329dc634e8ac8e78cc8965b)
+        ;
+
+        
+    
+    
+            var marker_d5caae53e4c2d8683976c25ff32f72d1 = L.marker(
+                [38.9145, 121.6147],
+                {}
+            ).addTo(map_e913313519948caec1967ed3b3495246);
+        
+    
+            var icon_13b4b6491e11d7846237d23d358d0ed8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d5caae53e4c2d8683976c25ff32f72d1.setIcon(icon_13b4b6491e11d7846237d23d358d0ed8);
+        
+    
+        var popup_89a35712a4cbf984bd62f18d087d4790 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6569af912eba8f8b8fb1347ccf123dc = $(`<div id="html_b6569af912eba8f8b8fb1347ccf123dc" style="width: 100.0%; height: 100.0%;">大连</div>`)[0];
+                popup_89a35712a4cbf984bd62f18d087d4790.setContent(html_b6569af912eba8f8b8fb1347ccf123dc);
+            
+        
+
+        marker_d5caae53e4c2d8683976c25ff32f72d1.bindPopup(popup_89a35712a4cbf984bd62f18d087d4790)
+        ;
+
+        
+    
+    
+            var marker_55f56660fe58b9046d7ca0dd01cc328b = L.marker(
+                [41.1102, 122.9946],
+                {}
+            ).addTo(map_e913313519948caec1967ed3b3495246);
+        
+    
+            var icon_12ca5d6e5c122cb3594d1a65ad03648e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_55f56660fe58b9046d7ca0dd01cc328b.setIcon(icon_12ca5d6e5c122cb3594d1a65ad03648e);
+        
+    
+        var popup_5ee19303ab683fc974bd848ffcee94fd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ee9125a91073cfe24e2c5dd3bffd5399 = $(`<div id="html_ee9125a91073cfe24e2c5dd3bffd5399" style="width: 100.0%; height: 100.0%;">鞍山</div>`)[0];
+                popup_5ee19303ab683fc974bd848ffcee94fd.setContent(html_ee9125a91073cfe24e2c5dd3bffd5399);
+            
+        
+
+        marker_55f56660fe58b9046d7ca0dd01cc328b.bindPopup(popup_5ee19303ab683fc974bd848ffcee94fd)
+        ;
+
+        
+    
+    
+            var marker_573a9517abdc1ecf3e868a283532ab7d = L.marker(
+                [39.3434, 117.3616],
+                {}
+            ).addTo(map_e913313519948caec1967ed3b3495246);
+        
+    
+            var icon_693389e8dea2900c9ceffd609be42842 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_573a9517abdc1ecf3e868a283532ab7d.setIcon(icon_693389e8dea2900c9ceffd609be42842);
+        
+    
+        var popup_dbb36de8471ab50ddc038382750da4bf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a7de5de87df56e4e96f403e3812e236a = $(`<div id="html_a7de5de87df56e4e96f403e3812e236a" style="width: 100.0%; height: 100.0%;">天津</div>`)[0];
+                popup_dbb36de8471ab50ddc038382750da4bf.setContent(html_a7de5de87df56e4e96f403e3812e236a);
+            
+        
+
+        marker_573a9517abdc1ecf3e868a283532ab7d.bindPopup(popup_dbb36de8471ab50ddc038382750da4bf)
+        ;
+
+        
+    
+    
+            var marker_a4b9068b1c384f8af1d05f14f097e7b9 = L.marker(
+                [43.8244, 125.3245],
+                {}
+            ).addTo(map_e913313519948caec1967ed3b3495246);
+        
+    
+            var icon_031c616da7f864051696565b2b14939d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a4b9068b1c384f8af1d05f14f097e7b9.setIcon(icon_031c616da7f864051696565b2b14939d);
+        
+    
+        var popup_7aecf499c90d0ba2baf279acb048aa1c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4949dc557934777cdba5b032f5c2cd64 = $(`<div id="html_4949dc557934777cdba5b032f5c2cd64" style="width: 100.0%; height: 100.0%;">长春</div>`)[0];
+                popup_7aecf499c90d0ba2baf279acb048aa1c.setContent(html_4949dc557934777cdba5b032f5c2cd64);
+            
+        
+
+        marker_a4b9068b1c384f8af1d05f14f097e7b9.bindPopup(popup_7aecf499c90d0ba2baf279acb048aa1c)
+        ;
+
+        
+    
+    
+            var marker_1881f9b86005981dac8c18352370cc1f = L.marker(
+                [42.8912, 129.5089],
+                {}
+            ).addTo(map_e913313519948caec1967ed3b3495246);
+        
+    
+            var icon_534b9b4b6702670e19526ca48250051d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1881f9b86005981dac8c18352370cc1f.setIcon(icon_534b9b4b6702670e19526ca48250051d);
+        
+    
+        var popup_0909319048ee8ad8fc46118666b144b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f691b738a55a0ed1fedd7fc58174177 = $(`<div id="html_4f691b738a55a0ed1fedd7fc58174177" style="width: 100.0%; height: 100.0%;">延边</div>`)[0];
+                popup_0909319048ee8ad8fc46118666b144b4.setContent(html_4f691b738a55a0ed1fedd7fc58174177);
+            
+        
+
+        marker_1881f9b86005981dac8c18352370cc1f.bindPopup(popup_0909319048ee8ad8fc46118666b144b4)
+        ;
+
+        
+    
+    
+            var marker_a863eb8f6e8782727ccd44b629f0688a = L.marker(
+                [37.87059, 112.548879],
+                {}
+            ).addTo(map_e913313519948caec1967ed3b3495246);
+        
+    
+            var icon_86d5179665b0019d6da96dbc65dbdc5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a863eb8f6e8782727ccd44b629f0688a.setIcon(icon_86d5179665b0019d6da96dbc65dbdc5f);
+        
+    
+        var popup_956e1e82e710b614b3aab77d3bc2b520 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a115dc471e454179ce5bca11144d561 = $(`<div id="html_5a115dc471e454179ce5bca11144d561" style="width: 100.0%; height: 100.0%;">太原</div>`)[0];
+                popup_956e1e82e710b614b3aab77d3bc2b520.setContent(html_5a115dc471e454179ce5bca11144d561);
+            
+        
+
+        marker_a863eb8f6e8782727ccd44b629f0688a.bindPopup(popup_956e1e82e710b614b3aab77d3bc2b520)
+        ;
+
+        
+    
+    
+            var marker_b2bcc76b94319c3cbf6a31db27d16a46 = L.marker(
+                [37.518314, 111.144319],
+                {}
+            ).addTo(map_e913313519948caec1967ed3b3495246);
+        
+    
+            var icon_31c336005c8e90fee2b773124ecfad99 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b2bcc76b94319c3cbf6a31db27d16a46.setIcon(icon_31c336005c8e90fee2b773124ecfad99);
+        
+    
+        var popup_c74fd5d496f08803a987015545435e2c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b1bbedfc5547f894e42cc2a85aafc45c = $(`<div id="html_b1bbedfc5547f894e42cc2a85aafc45c" style="width: 100.0%; height: 100.0%;">吕梁</div>`)[0];
+                popup_c74fd5d496f08803a987015545435e2c.setContent(html_b1bbedfc5547f894e42cc2a85aafc45c);
+            
+        
+
+        marker_b2bcc76b94319c3cbf6a31db27d16a46.bindPopup(popup_c74fd5d496f08803a987015545435e2c)
+        ;
+
+        
+    
+    
+            var poly_line_41dc6b6be5d0f9faf73c706000c49acd = L.polyline(
+                [[39.9042, 116.4074], [37.518314, 111.144319], [37.87059, 112.548879], [39.3434, 117.3616], [38.9145, 121.6147], [41.1102, 122.9946], [42.8912, 129.5089], [43.8244, 125.3245], [39.9042, 116.4074]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_e913313519948caec1967ed3b3495246);
+        
+</script>
+</html>
